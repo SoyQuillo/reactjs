@@ -11,9 +11,6 @@ import { func } from "prop-types";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const handleChange = (e) => {
-  console.log(e.target.value)
-}
 
 root.render(
   <>  
@@ -21,8 +18,14 @@ root.render(
 <Saludar/>
 <Button text="Saludar"/>
 
-  <input onChange={handleChange}></input>
+ <form onSubmit={(e) => { e.preventDefault()
+  console.log('enviado')}
+ }>
 
+  <h1> Registro de usuario </h1>  
+    <button>send</button>  
+
+</form> 
   </>
 
 
