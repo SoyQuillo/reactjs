@@ -11,9 +11,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
 
-    <Button/>
+    <Button text="CLICK ME"/>
+    <Button text= "PAY"/>
+    <Button text = "HELLO WORLD" name="Santiago"/>
 
-    <UserCard
+{/*     <UserCard
       name="Quillosky"
       amount={20000}
       married={true}
@@ -30,6 +32,6 @@ root.render(
       married={false}
       points={[100, 32.3, 21.2]}
       address={{ street: "av some", city: "New York" }}
-    />
+    /> */}
   </>
 );
